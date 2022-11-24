@@ -1,11 +1,10 @@
 $(document).ready(function(){
     var swiper = new Swiper(".book .book_intro", {
-        slidesPerView: 2,
+        slidesPerView: "auto",
         spaceBetween: 16,
         breakpoints: {
-            1400: {     /* 1400px 이상일때 적용 */
-                slidesPerView: 4,
-                spaceBetween: 100,
+            640: {     /* 1400px 이상일때 적용 */
+                spaceBetween: 200,
             },
         },
         centeredSlides: true,
