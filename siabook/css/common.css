@@ -295,6 +295,7 @@ html, body {
         height: 100vh;
         z-index: -1;
         background-color: #FBD2BD;
+        box-shadow: none;
         content: "";
     }
     .header.mobile_open::after {
