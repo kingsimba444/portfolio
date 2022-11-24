@@ -28,5 +28,6 @@ $(document).ready(function(){
         console.log(bg_name);
         $('.process').attr('data-bg', bg_name);
     });
-
+    
+    
 });
