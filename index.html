@@ -4,36 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css">
     <title>포트폴리오</title>
 </head>
 <body>
     <h1>포트폴리오</h1>
-    <div class="intro">
+    <section class="intro">
         <div class="wrapper">
             <div class="inner">
-                <h2>
+                <h2 data-aos="fade-up" data-aos-delay="100">
                     언제나 <span class="red">더 잘 할 수 있는</span> 방법을 찾는,<br>
                     <span>오명학</span>입니다.
                 </h2>
                 <strong>Portfolio</strong>
-                <p class="self">
+                <p class="self" data-aos="fade-up" data-aos-delay="200">
                     어제를 뛰어넘기 위해 고군분투하는, <span>오명학</span><br><br>
                     무슨 일을 하기 전에 더 나은 방법이 있는지 생각합니다.<br>
                     더 나은 방법을 위해 동료들과 의견을 공유하며 발전합니다.
                 </p>
-                <p class="info">
+                <p class="info" data-aos="fade-up" data-aos-delay="400">
                     나이: 93.04.04<br>
                     연락처: 010.4715.7434<br>
                     이메일: omh9304@naver.com<br>
                 </p>
-                <img src="images/pic1.png" alt="내 사진1">
+                <img src="images/pic1.png" alt="내 사진1" data-aos="fade-left" data-aos-delay="200">
             </div>
         </div>
-    </div>
-    <div class="youngrim">
+    </section>
+    <section class="youngrim">
         <div class="wrapper">
-            <div class="company">
+            <div class="company" data-aos="fade-up">
                 <strong>보금자리의 시작과 끝에서 가족을 디자인하다</strong>
                 <h2>영림종합건설</h2>
                 <div class="inner">
@@ -63,23 +65,23 @@
                     </p>
                 </div>
             </div>
-            <div class="mockup">
-                <a href="youngrim/index.html">
+            <div class="mockup" data-aos="fade-up">
+                <a href="youngrim/index.html" title="새 창 열기" target="_blank">
                     <div class="pic"><img src="images/mockup1.png" alt="영림종합건설 목업 사진"></div>
                     <span>홈페이지 바로가기</span>
                 </a>
             </div>
         </div>
-    </div>
-    <div class="siabook clearfix">
+    </section>
+    <section class="siabook clearfix">
         <div class="wrapper">
-            <div class="company">
-                <div class="mockup">
-                    <a href="siabook/index.html">
-                        <div class="pic"><img src="images/mockup2.png" alt="시아북 목업 사진"></div>
-                        <span>홈페이지 바로가기</span>
-                    </a>
-                </div>
+            <div class="mockup" data-aos="fade-up">
+                <a href="siabook/index.html" title="새 창 열기" target="_blank">
+                    <div class="pic"><img src="images/mockup2.png" alt="시아북 목업 사진"></div>
+                    <span>홈페이지 바로가기</span>
+                </a>
+            </div>
+            <div class="company" data-aos="fade-up">
                 <strong>나도 작가다. 나의 인생을 마음껏 펼치는,</strong>
                 <h2>시아북</h2>
                 <div class="inner">
@@ -113,10 +115,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="fin">
-        <strong>"가장 중요한 것은 꾸준히 앞으로 나아가는 것이다."</strong>
-        <h2>황금보다 귀한 시간을 투자해주셔서 고맙습니다.</h2>
-    </div>
+    </section>
+    <section class="fin">
+        <strong data-aos="fade-up">"가장 중요한 것은 꾸준히 앞으로 나아가는 것이다."</strong>
+        <h2 data-aos="fade-up" data-aos-delay="400">황금보다 귀한 시간을 투자해 읽어주셔서 고맙습니다.</h2>
+    </section>
+    <script>AOS.init();</script>
 </body>
 </html>

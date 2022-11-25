@@ -150,6 +150,8 @@ h1 {
     padding: 125px 0 165px 0;
 }
 .siabook .mockup {
+    position: relative;
+    z-index: 1;
     float: left;
     margin: 0 99px 0 0;
 }
