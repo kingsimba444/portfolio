@@ -26,6 +26,11 @@
     border: 1px solid #fff;
     border-radius: 18px;
 }
+.visual .inner .txt a:hover {
+    color: #1d1d1d;
+    background-color: #fff;
+    border: none;
+}
 .visual .inner .video {
     position: absolute;
     left: 0;
@@ -71,3 +76,226 @@
     100% { transform: translate(0, 0); }
 }
 
+.list ul {
+    float: left;
+    width: 33.33%;
+}
+.list ul:first-child li {
+    position: relative;
+    height: 600px;
+    border: 1px solid #999;
+}
+.list ul:first-child li a {
+    display: block;
+    height: 100%;
+}
+.list ul:first-child li a strong {
+    display: block;
+    padding: 60px 0 40px 80px;
+    font-size: 50px;
+}
+.list ul:first-child li a strong span {
+    font-weight: 700;
+}
+.list ul:first-child li a .menu_book {
+    display: block;
+    text-align: center;
+    font-size: 200px;
+    transition: 0.5s;
+}
+.list ul:first-child li a .more {
+    position: absolute;
+    display: inline-block;
+    right: 55px;
+    bottom: 60px;
+}
+.list ul:first-child li a .more span {
+    float: left;
+    font-size: 30px;
+}
+.list ul:first-child li a .more i {
+    float: left;
+    margin: 8px 0 0 10px;
+    font-size: 30px;
+    transition: 0.5s;
+}
+.list ul:first-child li a:hover .menu_book {
+    transform: scale3d(1.2, 1.2, 1);
+}
+.list ul:first-child li a:hover .more i {
+    transform: translate(5px, 0);
+}
+
+.list ul:nth-child(2) li,
+.list ul:nth-child(3) li {
+    position: relative;
+    height: 300px;
+    border: 1px solid #999;
+}
+.list ul:nth-child(2) li a,
+.list ul:nth-child(3) li a {
+    display: block;
+    height: 100%;
+}
+.list ul:nth-child(2) li a strong,
+.list ul:nth-child(3) li a strong {
+    display: block;
+    padding: 30px 0 0 20px;
+    font-size: 30px;
+}
+.list ul:nth-child(2) li a span,
+.list ul:nth-child(3) li a span {
+    display: block;
+    margin: 5px 0 20px 40px;
+    font-size: 15px;
+}
+.list ul:nth-child(2) li a i,
+.list ul:nth-child(3) li a i {
+    margin: 0 0 0 30px;
+    font-size: 60px;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+.list ul:nth-child(2) li a .pic,
+.list ul:nth-child(3) li a .pic {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.list ul:nth-child(2) li a .pic img,
+.list ul:nth-child(3) li a .pic img {
+    transition: 0.5s;
+}
+.list ul:nth-child(2) li a:hover i,
+.list ul:nth-child(3) li a:hover i {
+    transform: rotate(45deg) translate(10px);
+}
+.list ul:nth-child(2) li a:hover .pic img,
+.list ul:nth-child(3) li a:hover .pic img {
+    transform: scale3d(1.1, 1.1, 1);
+}
+.list ul:nth-child(2) li {
+    border-left: none;
+    border-right: none;
+}
+.list ul:nth-child(2) li:nth-child(1), 
+.list ul:nth-child(3) li:nth-child(1) {
+    border-bottom: none;
+}
+
+.notice {
+    color: #fff;
+    background: url(../images/main/notice_bg.png) center center / cover;
+}
+.notice h2 {
+    margin: 0 0 20px 0;
+    font-size: 50px;
+    text-align: center;
+}
+.notice ul li {
+    position: relative;
+    height: 170px;
+    border-bottom: 1px solid #fff;
+}
+.notice ul li:first-child {
+    border-top: 1px solid #fff;
+}
+.notice ul li a {
+    display: block;
+    height: 100%;
+}
+.notice ul li a strong {
+    display: block;
+    padding: 30px 0 5px 40px;
+    font-size: 40px;
+}
+.notice ul li a span {
+    margin: 0 0 0 45px;
+}
+.notice ul li a i {
+    position: absolute;
+    right: 80px;
+    top: 40px;
+    font-size: 50px;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+}
+.notice ul li a:hover i {
+    transform: rotate(-45deg) translate(10px);
+}
+
+.meeting::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #F3EFEA;
+    content: "";
+}
+/* .meeting::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background: url(../images/main/meeting_bg.png) no-repeat center center / cover;
+    content: "";
+} */
+
+.meeting .left .inner {
+    display: flex;
+    align-items: center;
+    float: left;
+    margin: 0 5% 0 5%;
+    width: 50%;
+    height: 100vh;
+}
+.meeting .left .inner ul li {
+    float: left;
+    margin: 0 40px 0 0;
+    width: calc((90%-80px)/3);
+}
+.meeting .left .inner ul li:nth-child(2) {
+    padding: 50px 0 0 0;
+}
+.meeting .left .inner ul li:last-child {
+    margin-right: 0;
+}
+.meeting .left .inner ul li a {
+    display: block;
+}
+.meeting .left .inner ul li a .pic {
+    display: block;
+    height: 400px;
+    overflow: hidden;
+}
+.meeting .left .inner ul li a .pic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.meeting .left .inner ul li a strong {
+    display: block;
+    font-size: 25px;
+    margin: 10px 0 5px 0;
+}
+.meeting .left .inner ul li a p {
+    line-height: 1.5;
+}
+.meeting .left .inner ul li a:hover .pic img {
+    transform: scale3d(1.1, 1.1, 1);
+}
+.meeting .right .inner {
+    float: left;
+    width: 40%;
+    height: 100vh;
+    background: url(../images/main/meeting_bg.png) center center / cover;
+}
+.meeting .right .inner strong {
+    display: block;
+}
