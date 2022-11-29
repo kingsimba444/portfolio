@@ -165,6 +165,8 @@
 }
 .list ul:nth-child(2) li a .pic img,
 .list ul:nth-child(3) li a .pic img {
+    width: 150px;
+    height: 215px;
     transition: 0.5s;
 }
 .list ul:nth-child(2) li a:hover i,
@@ -182,6 +184,90 @@
 .list ul:nth-child(2) li:nth-child(1), 
 .list ul:nth-child(3) li:nth-child(1) {
     border-bottom: none;
+}
+
+@media screen and (max-width:1024px){
+    .list ul:first-child li a strong {
+        padding: 60px 0 30px 65px;
+        font-size: 45px;
+    }
+    .list ul:first-child li a .menu_book {
+        font-size: 170px;
+    }
+    .list ul:first-child li a .more {
+        right: 40px;
+        bottom: 125px;    
+    }
+    .list ul:first-child li a .more span {
+        font-size: 20px;
+    }
+    .list ul:first-child li a .more i {
+        margin: 2px 0 0 5px;
+        font-size: 25px;
+    }
+    .list ul:first-child li a:hover .menu_book {
+        transform: scale3d(1.2, 1.2, 1);
+    }
+    .list ul:first-child li a:hover .more i {
+        transform: translate(5px, 0);
+    }
+    .list ul:nth-child(2) li a span,
+    .list ul:nth-child(3) li a span {
+        margin: 5px 0 10px 40px;
+    }
+    .list ul:nth-child(2) li a i,
+    .list ul:nth-child(3) li a i {
+        margin: 0 0 0 35px;
+        font-size: 50px;
+    }
+    .list ul:nth-child(2) li a .pic,
+    .list ul:nth-child(3) li a .pic {
+        position: absolute;
+        right: 10px;
+        top: 64%;
+        width: 150px;
+        height: 215px;
+        transform: translate(0, -50%);
+    }
+    .list ul:nth-child(2) li a .pic img,
+    .list ul:nth-child(3) li a .pic img {
+        width: 130px;
+        height: 195px;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width:768px){
+    .list ul:first-child li a strong {
+        padding: 80px 0 25px 45px;
+        font-size: 30px;
+    }
+    .list ul:first-child li a .menu_book {
+        font-size: 140px;
+    }
+    .list ul:first-child li a .more {
+        right: 40px;
+        bottom: 175px;    
+    }
+    .list ul:nth-child(2) li a strong,
+    .list ul:nth-child(3) li a strong {
+        font-size: 20px;
+    }
+    .list ul:nth-child(2) li a i,
+    .list ul:nth-child(3) li a i {
+        font-size: 40px;
+    }
+    .list ul:nth-child(2) li a .pic,
+    .list ul:nth-child(3) li a .pic {
+        right: 0px;
+        width: 130px;
+        height: 170px;
+    }
+    .list ul:nth-child(2) li a .pic img,
+    .list ul:nth-child(3) li a .pic img {
+        width: 110px;
+        height: 175px;
+    }
 }
 
 .notice {
@@ -245,6 +331,25 @@
     content: "";
 } */
 
+@media screen and (max-width:768px){
+    .notice h2 {
+        font-size: 40px;
+    }
+    .notice ul li {
+        position: relative;
+        height: 140px;
+    }
+    .notice ul li a strong {
+        font-size: 30px;
+    }
+    .notice ul li a i {
+        font-size: 40px;
+    }
+}
+
+.meeting h2 {
+    display: none;
+}
 .meeting .left .inner {
     display: flex;
     align-items: center;
@@ -290,12 +395,217 @@
 .meeting .left .inner ul li a:hover .pic img {
     transform: scale3d(1.1, 1.1, 1);
 }
-.meeting .right .inner {
+.meeting .left .more {
+    display: none;
+}
+.meeting .right {
+    position: relative;
     float: left;
     width: 40%;
     height: 100vh;
     background: url(../images/main/meeting_bg.png) center center / cover;
 }
+.meeting .right .inner {
+    position: absolute;
+    top: 255px;
+    left: 65px;
+    color: #fff;
+    text-align: right;
+}
 .meeting .right .inner strong {
     display: block;
+    font-size: 40px;
+}
+.meeting .right .inner span {
+    display: block;
+    margin: 30px 0 80px 0;
+    font-size: 20px;
+}
+.meeting .right .inner .more {
+    display: inline-block;
+}
+.meeting .right .inner .more a {
+    display: inline-block;
+}
+.meeting .right .inner .more a p {
+    float: left;
+    margin: 0 5px 0 0;
+}
+.meeting .right .inner .more a i {
+    float: left;
+    margin: 1px 0 0 0;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.meeting .right .inner .more a:hover i {
+    transform: translate(10px, 0);
+}
+
+@media screen and (max-width:1440px){
+    .meeting .left .inner {
+        margin: 0 3% 0 3%;
+    }
+    .meeting .left .inner ul li {
+        margin: 0 30px 0 0;
+    }
+    .meeting .right {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .meeting .left .inner {
+        margin: 0 3% 0 3%;
+        width: 50%;
+    }
+    .meeting .left .inner ul li {
+        margin: 0 25px 0 0;
+    }
+    .meeting .left .inner ul li a strong {
+        font-size: 20px;
+    }
+    .meeting .left .inner ul li a span {
+        display: none;
+    }
+    .meeting .right {
+        width: 44%;
+    }
+    .meeting .right .inner {
+        top: 280px;
+        left: 45px;
+    }
+    .meeting .right .inner strong {
+        font-size: 35px;
+    }
+    .meeting .right .inner span {
+        margin: 20px 0 65px 0;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .meeting {
+        padding: 40px 0 0 0;
+    }
+    .meeting h2 {
+        display: block;
+        font-size: 30px;
+    }
+    .meeting .left {
+        position: relative;
+    }
+    .meeting .left .inner {
+        display: block;
+        float: none;
+        margin: 0;
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+    .meeting .left .inner ul li {
+        float: none;
+        margin: 0;
+        width: auto;
+    }
+    .meeting .left .inner ul li:nth-child(2) {
+        padding: 0;
+    }
+    .meeting .left .inner ul li a .pic {
+        height: 100px;
+    }
+    .meeting .left .inner ul li a span {
+        display: block;
+        margin: 0 0 25px 0;
+    }
+    .meeting .left .inner .more {
+        display: block;
+    }
+    .meeting .left .inner .more a {
+        display: inline-block;
+    }
+    .meeting .left .inner .more a p {
+        float: left;
+    }
+    .meeting .left .inner .more a i {
+        float: left;
+        margin: 0px 0 0 5px;
+        font-size: 20px;
+    }
+    .meeting .right {
+        display: none;
+    }
+}
+
+body #fp-nav ul li {
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+}
+body #fp-nav ul li:last-child { /* footer 삭제 */
+    display: none;
+}
+body #fp-nav ul li a span,
+body #fp-nav ul li:hover a span {
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    left: 0;
+    top: 0;
+    margin: 0;
+}
+body #fp-nav ul li a.active span,
+body #fp-nav ul li:hover a.active span {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: #FF0000;
+}
+body #fp-nav ul li .fp-tooltip {
+    overflow: visible;
+    right: 25px !important;
+    top: -3px;
+    width: auto;
+    max-width: max-content; /* 컨텐츠 있는 만큼 다 */
+    padding: 0 10px;
+    background-color: #FF0000;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+body #fp-nav ul li .fp-tooltip::after {
+    position: absolute;
+    right: -4px;
+    top: 7px;
+    width: 8px;
+    height: 8px;
+    background-color: #FF0000;
+    transform: rotate(45deg);
+    content: "";
+}
+/* 어두운 툴팁 */
+body #fp-nav.black ul li a span,
+body #fp-nav.black ul li:hover a span {
+    background: #cccccc;
+}
+body #fp-nav.black ul li a.active span,
+body #fp-nav.black ul li:hover a.active span {
+    background: #1d1d1d;
+}
+body #fp-nav.black ul li .fp-tooltip {
+    background-color: #1d1d1d;
+    color: #ffffff;
+}
+body #fp-nav.black ul li .fp-tooltip::after {
+    background-color: #1d1d1d;
+}
+
+
+
+
+
+
+
+.fp-watermark {
+    display: none;
 }
