@@ -30,7 +30,7 @@
 }
 .visual .inner ul li a {
     display: inline-block;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .visual .inner ul li a .pic {
     display: block;
@@ -40,7 +40,7 @@
     margin: 0 0 10px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     opacity: 0.7;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .visual .inner ul li a .pic img {
     display: block;
@@ -50,7 +50,7 @@
 }
 .visual .inner ul li a strong {
     font-family: "Noto Sans KR";
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .visual .inner ul:nth-child(1) li:nth-child(1) {
     margin: 45px 0 60px 60px;
@@ -373,7 +373,7 @@
     float: left;
     color: #999;
     font-family: "Noto Sans KR";
-    transition: 1s;
+    transition: 0.5s;
 }
 .book .book_intro .intro_bot .more a:hover span {
     color: #3d3d3d;
@@ -383,7 +383,7 @@
     margin: 1px 0 0 3px;
     font-size: 20px;
     color: #999;
-    transition: 1s;
+    transition: 0.5s;
 }
 .book .book_intro .intro_bot .more a:hover i {
     margin: 1px 0 0 10px;
@@ -680,7 +680,7 @@
     height: 100%;
     z-index: 10;
     background-color: #1D1D1D;
-    transition: 1s;
+    transition: 0.5s;
 }
 .make .self .more a:hover {
     transform: translate(11px, 11px);
