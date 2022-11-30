@@ -108,6 +108,9 @@
     }
 }
 
+.list h2 {
+    display: none;
+}
 .list ul {
     float: left;
     width: 33.33%;
