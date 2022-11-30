@@ -309,14 +309,12 @@ h1 {
 }
 .tamdok .mockup {
     display: inline-block;
+    width: 836px;
+    height: 419px;
 }
 .tamdok .mockup a {
     position: relative;
     display: block;
-}
-.tamdok .mockup a .pic {
-    width: 836px;
-    height: 419px;
 }
 .tamdok .mockup a img {
     width: 100%;
@@ -337,8 +335,8 @@ h1 {
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 25px;
-    color: #3d3d3d;
-    background-color: rgba(255, 255, 255, 0.6);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 5px 40px;
     border-radius: 50px;
     white-space: nowrap;
