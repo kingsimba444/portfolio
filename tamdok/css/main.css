@@ -629,7 +629,7 @@
     }
     .meeting h2 {
         display: block;
-        margin: 0 0 30px 0;
+        margin: 40px 0 30px 37px;
         font-size: 30px;
     }
     .meeting .left {
@@ -677,6 +677,16 @@
         display: none;
     }
 }
+
+@media screen and (max-width:768px){
+    .meeting h2 {
+        margin: 0px 0 30px 37px;
+    }
+}
+
+
+
+
 
 body #fp-nav ul li {
     width: 15px;

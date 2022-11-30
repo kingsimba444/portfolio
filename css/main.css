@@ -247,6 +247,105 @@ h1 {
     width: 440px;
 }
 
+.tamdok {
+    padding: 134px 0 150px 0;
+    background-color: #E6F3EA;
+}
+.tamdok .company {
+    float: left;
+}
+.tamdok .company h2 {
+    margin: 0 0 80px 0;
+    font-size: 70px;
+    font-weight: 700;
+}
+.tamdok .company ul {
+    float: left;
+}
+.tamdok .company ul.tit {
+    margin: 0 20px 0 0;
+    font-weight: 700;
+}
+.tamdok .company ul.tit li {
+    margin: 0 0 40px 0;
+}
+.tamdok .company ul.sub {
+    margin: 0 80px 0 0;
+}
+.tamdok .company ul.sub li {
+    margin: 0 0 40px 0;
+}
+.tamdok .company ul.sub .color strong {
+    position: absolute;
+}
+.tamdok .company ul.sub .color strong:nth-child(1) {
+    margin: 5px 0 0 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #9D9D9D;
+}
+.tamdok .company ul.sub .color strong:nth-child(2) {
+    margin: 5px 0 0 20px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #ff0000;
+}
+.tamdok .company ul.sub .color strong:nth-child(3) {
+    margin: 5px 0 0 40px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+.tamdok .company em {
+    display: block;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+.tamdok .company p {
+    width: 440px;
+}
+.tamdok .mockup {
+    display: inline-block;
+}
+.tamdok .mockup a {
+    position: relative;
+    display: block;
+}
+.tamdok .mockup a .pic {
+    width: 836px;
+    height: 419px;
+}
+.tamdok .mockup a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.8s;
+}
+.tamdok .mockup a span {
+    display: none;
+}
+.tamdok .mockup a:hover .pic img {
+    transform: scale3d(1.03, 1.03, 1);
+}
+.tamdok .mockup a:hover span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #3d3d3d;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5px 40px;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+
+
 .fin {
     padding: 180px 0 200px;
     background-color: #F7F1ED;
@@ -260,3 +359,4 @@ h1 {
     margin: 20px 0 0 0;
     font-size: 40px;
 }
+
